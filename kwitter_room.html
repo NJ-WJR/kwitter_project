@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title>Kwitter Room</title>
@@ -18,15 +17,33 @@
 </head>
 <body>
 <div class="container">
-<button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+<button id="logout" onclick="logOut()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
 	<center>
-		<h1 class="header">	
-			Kwitter	
-			<sup>
-				<img src="m2.png">
-			</sup>
+		<div class="css-3d-text">Kwitter</div>
+		<style>
+			.css-3d-text {
+				font-size: 100px;
+				color:lavender;
+				font-family: Georgia, 'Times New Roman', Times, serif;
+				text-shadow: 
+					0px 0px 0 rgb(37, 75, 163),
+					1px 1px 0 rgb(32, 70, 158),
+					2px 2px 0 rgb(27, 65, 153),
+					3px 3px 0 rgb(22, 60, 148),
+					4px 4px 0 rgb(17, 55, 143), 
+					5px 5px 0 rgb(12, 50, 138), 
+					6px 6px 0 rgb(7, 45, 133), 
+					7px 7px 0 rgb(2, 40, 128),
+					8px 8px 0 rgb(-3, 35, 123), 
+					9px 9px 0 rgb(-8, 30, 118), 
+					10px 10px 0 rgb(-13, 25, 113), 
+					11px 11px 10px rgba(0, 0, 0, 1), 
+					11px 11px 1px rgba(0, 0,0,0.5), 
+					0px 0px 10px rgba(0, 0, 0, .2);
+			}
+		</style>
 		</h1>
-		<h3 id="user name"class="color_white"></h3>
+		<h3 id="user_name"class="color_white"></h3>
 		<div class="form-group input_div_room_page">
 			<label>#Add Room:</label>
 			<input type="text" id="room_name" class="form-control" placeholder="#Room Name">
