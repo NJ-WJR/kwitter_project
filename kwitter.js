@@ -1,14 +1,15 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyAAaoTOHv8nW_fRi3T3IW2l-HfTq2wyUd8",
-  authDomain: "kwitter-project-8f075.firebaseapp.com",
-  databaseURL: "https://kwitter-project-8f075-default-rtdb.firebaseio.com",
-  projectId: "kwitter-project-8f075",
-  storageBucket: "kwitter-project-8f075.appspot.com",
-  messagingSenderId: "734269235483",
-  appId: "1:734269235483:web:8ca52445de2858435333be"
+var firebaseConfig = {
+  apiKey: "AIzaSyBZuMJCb1dArUf9PrNzzlyPlwA1c2oAlP4",
+  authDomain: "kwitter-61381.firebaseapp.com",
+  databaseURL: "https://kwitter-61381-default-rtdb.firebaseio.com",
+  projectId: "kwitter-61381",
+  storageBucket: "kwitter-61381.appspot.com",
+  messagingSenderId: "243822369407",
+  appId: "1:243822369407:web:d84da4916d016c3898fd4a",
+  measurementId: "G-494DVZ1CZ7"
 };
 
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig)
 
 function addUser() {
     user_name = document.getElementById("user_name").value
